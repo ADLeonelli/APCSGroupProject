@@ -1,5 +1,5 @@
 package CoachSim;
-
+//test
 public class Player {
 	private String name;
 	private int num;
