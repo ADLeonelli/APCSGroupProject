@@ -36,7 +36,7 @@ public class SoccerPlayer implements Player{
 		playerName = name;
 	}
 	
-	public void setNum(int num){
+	public void setNumber(int num){
 		number=num;
 	}
 	
@@ -60,7 +60,6 @@ public class SoccerPlayer implements Player{
 	public String toString() {
 		return "Player Info::/nName::"+getName()+"/nNumber::"+getNumber()+"/nPosition::"+getPos();
 	}
-
-
+	
 	
 }
