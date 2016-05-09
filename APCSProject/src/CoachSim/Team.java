@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public abstract class Team{
+public class Team {
 	private List<Player> players;
 	private String name;
 	
