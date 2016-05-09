@@ -1,47 +1,62 @@
 package CoachSim;
-
-public class Player {
-	private String name;
-	private int num;
+//test
+public abstract class Player {
+	private String position;
+	private String playerName;
+	private int number;
 	
-	public Player(){	
+	public Player(){
 	}
 	
-	public Player(String n){
-		setName(n);
+	public Player(String name){
+		setName(name);
 		setNum(0);
+		setPos("");
 	}
 	
-	public Player(int number) {
+	public Player(int number){
 		setNum(number);
-		setName("Player");
+		setName("Unknown");
+		setPos("");
 	}
 	
-	public Player(String n, int number) {
+	public Player(String name, int number){
 		setNum(number);
-		setName(n);
+		setName(name);
+		setPos("");
 	}
 	
-	public void setName(String n){
-		name = n;
+	public Player(String name, int number, String pos){
+		setName(name);
+		setNum(number);
+		setPos(pos);
+	}
+
+	public void setName(String name){
+		playerName = name;
 	}
 	
-	public void setNum(int number){
-		num = number;
+	public void setNum(int num){
+		number=num;
+	}
+	
+	public void setPos(String pos){
+		position = pos;
 	}
 	
 	public String getName(){
-		return name;
+		return playerName;
 	}
 	
-	public int getNum(){
-		return num;
+	public int getNumber(){
+		return number;
 	}
-
-	@Override
-	public String toString() {
-		return "Player [name=" + name + ", num=" + num + "]";
+	
+	public String getPos(){
+		return position;
 	}
+	
+	abstract public String toString();
 	
 	
 }

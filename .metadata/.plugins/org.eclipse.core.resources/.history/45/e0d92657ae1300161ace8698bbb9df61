@@ -1,0 +1,13 @@
+package CoachSim;
+//test
+public interface Player {
+
+
+	public void setName(String n);
+	
+	public void setNum(int number);
+	
+	public String toString();
+	
+	
+}
