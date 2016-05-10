@@ -29,7 +29,7 @@ public class SoccerPlayer extends Player implements Statable{
 	}
 
 	@Override
-	public int compareStats(Object obj) {
+	public int compareStats() {
 		// TODO Auto-generated method stub
 		return 0;
 	}
