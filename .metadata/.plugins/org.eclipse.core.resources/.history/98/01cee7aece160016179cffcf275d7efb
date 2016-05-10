@@ -1,6 +1,9 @@
 package CoachSim;
 
 public class SoccerPlayer extends Player{
+	private String position;
+	private String playerName;
+	private int number;
 	
 	public SoccerPlayer(){
 		super();
@@ -27,4 +30,7 @@ public class SoccerPlayer extends Player{
 	public String toString() {
 		return "Player Info::/nName::"+getName()+"/nNumber::"+getNumber()+"/nPosition::"+getPos();
 	}
+
+
+	
 }

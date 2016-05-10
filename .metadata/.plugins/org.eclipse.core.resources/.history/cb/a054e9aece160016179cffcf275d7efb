@@ -1,7 +1,6 @@
 package CoachSim;
 
 public class BaseballPlayer extends Player{
-	
 	public BaseballPlayer(){
 		super();
 	}
