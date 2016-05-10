@@ -1,9 +1,15 @@
 package CoachSim;
 
-public class BaseballPlayer extends Player{
-	
+import java.util.ArrayList;
+
+public class BaseballPlayer extends Player implements Statable{
+		
+	private ArrayList<BaseballStat> stats;
+		
 	public BaseballPlayer(){
 		super();
+		
+		stats = new ArrayList<BaseballStat>();
 	}
 	
 	public BaseballPlayer(String name){
@@ -23,8 +29,73 @@ public class BaseballPlayer extends Player{
 		super(name, number, pos);
 	}
 	
+	public int getHits(){
+		int hits =0;
+		for(BaseballStat i: stats){
+			if(i.isHit()==1)
+				hits++;
+		}
+			return hits;
+		
+	}
+	
+	public int getABs(){
+		
+		int AB =0;
+		for(BaseballStat i: stats){
+			if(i.isAB()==1)
+				AB++;
+		}
+			return AB;
+	}
+	
+	public int getTotalBases(){
+		int bases =0;
+		for(BaseballStat i: stats){
+			bases+= i.getBases();
+		}
+			return bases;
+		
+	}
+	
+	public double getBA(){
+		return (double)getHits()/getABs();
+	}
+	
+	public double getSlugging(){
+		
+		return (double)getTotalBases()/getABs();
+		
+	}
+	public int compareStats(Object obj) {
+		// TODO Auto-generated method stub
+		BaseballPlayer other = (BaseballPlayer) obj;
+		
+		if(getBA()==other.getBA())
+			return 0;
+		if(getBA()>other.getBA())
+			return 1;
+		else 
+			return -1;
+		
+		
+	
+	}
+
+	@Override
+	public String getStats() {
+		// TODO Auto-generated method stub
+		return stats.toString();
+	}
+	
+	
+	
 	@Override
 	public String toString() {
-		return "Player Info::/nName::"+getName()+"/nNumber::"+getNumber()+"/nPosition::"+getPos();
+		return "Player Info::/nName::"+getName()+"/nNumber::"+getNumber()+"/nPosition::"+getPos() + "\nStats:: " + getStats();
 	}
+
+
+
+	
 }

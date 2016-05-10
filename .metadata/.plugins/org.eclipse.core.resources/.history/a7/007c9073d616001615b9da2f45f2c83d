@@ -2,7 +2,7 @@ package CoachSim;
 
 public interface Statable {
 	
-	public int compareStats(Object obj);
+	public int compareStats();
 	
 	public String getStats();
 	

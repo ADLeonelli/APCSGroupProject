@@ -1,6 +1,6 @@
 package CoachSim;
 
-public class SoccerPlayer extends Player implements Statable{
+public class SoccerPlayer extends Player{
 	
 	public SoccerPlayer(){
 		super();
@@ -26,17 +26,5 @@ public class SoccerPlayer extends Player implements Statable{
 	@Override
 	public String toString() {
 		return "Player Info::/nName::"+getName()+"/nNumber::"+getNumber()+"/nPosition::"+getPos();
-	}
-
-	@Override
-	public int compareStats() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public String getStats() {
-		// TODO Auto-generated method stub
-		return null;
 	}
 }
