@@ -1,41 +1,20 @@
-<<<<<<< HEAD
-INDEX VERSION 1.127+/Users/kellyma/Desktop/APCSGroupProject/.metadata/.plugins/org.eclipse.jdt.core
-610492412.index
-1181824530.index
-931493626.index
-965328116.index
-2573581375.index
-4111285784.index
-4269162346.index
-507630569.index
-1231475482.index
-2792261085.index
-370732924.index
-1271342938.index
-1886603896.index
-2715718799.index
-3157353376.index
-3422679912.index
-2825789844.index
-2737811096.index
-=======
-INDEX VERSION 1.127+C:\Users\zivm8419\Desktop\APCSGroupProject\.metadata\.plugins\org.eclipse.jdt.core
-1217923329.index
-2330857962.index
-3004383119.index
-3793391456.index
+INDEX VERSION 1.127+C:\Users\leonellia5341\Desktop\APCSGroupProject\.metadata\.plugins\org.eclipse.jdt.core
 4232502288.index
-1543766311.index
-2775202610.index
-1442487239.index
-3398816544.index
 2963538765.index
-349556966.index
 4237918392.index
+1217923329.index
 1106408436.index
-3544518797.index
+2330857962.index
 1248407149.index
+1442487239.index
 3184717171.index
+2913102958.index
+1543766311.index
+3004383119.index
+2775202610.index
+3793391456.index
+3544518797.index
+3398816544.index
+349556966.index
 963700148.index
 3867579341.index
->>>>>>> origin/master
