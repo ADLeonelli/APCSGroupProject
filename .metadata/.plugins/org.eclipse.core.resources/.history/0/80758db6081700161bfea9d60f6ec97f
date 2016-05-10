@@ -1,6 +1,6 @@
 package CoachSim;
 
-import java.util.ArrayList<E>;
+import java.util.ArrayList;
 
 public class BaseballPlayer extends Player implements Statable{
 		
