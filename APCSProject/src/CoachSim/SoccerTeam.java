@@ -1,7 +1,4 @@
 package CoachSim;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Arrays;
 
 public class SoccerTeam extends Team{
 	

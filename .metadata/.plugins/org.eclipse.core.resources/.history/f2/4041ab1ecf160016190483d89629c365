@@ -1,0 +1,11 @@
+package CoachSim;
+
+public interface running {
+
+	public void setSpeed(double s);
+
+	public double getSpeed();
+	
+	public String toString();
+	
+}
