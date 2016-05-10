@@ -1,5 +1,6 @@
 package CoachSim;
 //test
+
 public abstract class Player {
 	private String position;
 	private String playerName;
@@ -47,7 +48,7 @@ public abstract class Player {
 	public String getName(){
 		return playerName;
 	}
-	
+
 	public int getNumber(){
 		return number;
 	}

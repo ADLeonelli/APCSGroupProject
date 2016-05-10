@@ -18,8 +18,16 @@ public class Team {
 		createList();
 	}
 	
+	public Team(String name, List<Player> players){
+		setPlayers(players);
+	}
+	
 	public void setName(String name){
 		this.name = name;
+	}
+	
+	public void setPlayers(List<Player> players){
+		this.players = players;
 	}
 	
 	public void createList(){
