@@ -1,10 +1,13 @@
 package CoachSim;
 //test
 <<<<<<< HEAD
+<<<<<<< HEAD
 public interface Player {
 
 	public void setName(String n);
 =======
+=======
+>>>>>>> origin/master
 public abstract class Player {
 	private String position;
 	private String playerName;
@@ -52,6 +55,9 @@ public abstract class Player {
 	public String getName(){
 		return playerName;
 	}
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
 	
 	public int getNumber(){
