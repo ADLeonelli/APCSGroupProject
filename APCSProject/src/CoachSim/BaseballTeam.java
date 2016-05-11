@@ -16,17 +16,17 @@ public class BaseballTeam extends Team{
 		super(name);
 	}
 	
-	public BaseballTeam(File doc){
-		Scanner readFile = new Scanner(doc);
+	public void populate(){
+		Scanner readFile = new Scanner(new File("src/CoachSim/BaseballInput"));
 		
 		setName(readFile.nextLine());
-
+		
 		while(readFile.hasNextLine()){
 			readFile.nextLine();
 			String name = readFile.next() + readFile.next();
 			int num = readFile.nextInt();
 			String pos = readFile.next();
-			addPlayer(new BaseballPlayer(name, num, pos));
+			addBaseballPlayer(name, num, pos);
 		}
 		
 		readFile.close();
@@ -37,11 +37,17 @@ public class BaseballTeam extends Team{
 		super.addPlayer(new BaseballPlayer(name, number, pos));
 	}
 	
-	public void save(String fileName) throws FileNotFoundException {
+	public void save() throws FileNotFoundException {
 		BaseballTeam bt = new BaseballTeam();
 	    PrintWriter pw = new PrintWriter(new FileOutputStream("src/CoachSim/BaseballOutput"));
 	        pw.println(bt);
 	    pw.close();
 	}
+
+	@Override
+	public String toString() {
+		return super.toString();
+	}
+	
 }
 

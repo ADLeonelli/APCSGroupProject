@@ -1,0 +1,15 @@
+package CoachSim;
+
+public class Runner {
+
+	public static void main(String[] args) {
+		
+		BaseballPlayer bplayer1 = new BaseballPlayer();
+		System.out.println(bplayer1);
+		
+		BaseballTeam test = new BaseballTeam("src/CoachSim/BaseballInput");
+		System.out.println(test);
+
+	}
+
+}
