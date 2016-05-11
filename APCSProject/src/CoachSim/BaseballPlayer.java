@@ -92,7 +92,7 @@ public class BaseballPlayer extends Player implements Statable{
 	
 	@Override
 	public String toString() {
-		return "Player Info::/nName::"+getName()+"/nNumber::"+getNumber()+"/nPosition::"+getPos() + "\nStats:: " + getStats();
+		return "Player Info::\nName::"+getName()+"\nNumber::"+getNumber()+"\nPosition::"+getPos() + "\nStats:: " + getStats();
 	}
 
 

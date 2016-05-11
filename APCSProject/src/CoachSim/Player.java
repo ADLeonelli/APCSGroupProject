@@ -7,6 +7,9 @@ public abstract class Player {
 	private int number;
 	
 	public Player(){
+		setNum(0);
+		setName("Unknown");
+		setPos("");
 	}
 	
 	public Player(String name){
