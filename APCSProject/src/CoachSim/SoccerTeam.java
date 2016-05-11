@@ -1,5 +1,7 @@
 package CoachSim;
 
+import java.io.*;
+
 public class SoccerTeam extends Team{
 	
 	public SoccerTeam(){
@@ -13,4 +15,7 @@ public class SoccerTeam extends Team{
 	public void addSoccerPlayer(String name, int number, String pos){
 		super.addPlayer(new SoccerPlayer(name, number, pos));
 	}
+	
+	
+	
 }
