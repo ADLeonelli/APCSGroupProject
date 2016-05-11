@@ -1,0 +1,14 @@
+package CoachSim;
+
+import java.io.*;
+
+public class FileWriter {
+
+	FileOutputStream fos = new FileOutputStream("t.tmp");
+	ObjectOutputStream oos = new ObjectOutputStream(fos);
+	oos.writeObject(clubs);
+	oos.close();
+	
+}
+	
+
