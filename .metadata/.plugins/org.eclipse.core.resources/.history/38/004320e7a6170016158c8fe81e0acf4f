@@ -3,8 +3,6 @@ package CoachSim;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintWriter;
-import java.io.*;
-import java.util.Scanner;
 
 public class BaseballTeam extends Team{
 	
@@ -14,23 +12,6 @@ public class BaseballTeam extends Team{
 	
 	public BaseballTeam(String name){
 		super(name);
-	}
-	
-	public BaseballTeam(File doc){
-		Scanner readFile = new Scanner(doc);
-		
-		setName(readFile.nextLine());
-
-		while(readFile.hasNextLine()){
-			readFile.nextLine();
-			String name = readFile.next() + readFile.next();
-			int num = readFile.nextInt();
-			String pos = readFile.next();
-			addPlayer(new BaseballPlayer(name, num, pos));
-		}
-		
-		readFile.close();
-		
 	}
 	
 	public void addBaseballPlayer(String name, int number, String pos){
