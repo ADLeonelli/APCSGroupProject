@@ -16,11 +16,6 @@ public class SoccerTeam extends Team{
 		super.addPlayer(new SoccerPlayer(name, number, pos));
 	}
 	
-	public void save(String fileName) throws FileNotFoundException {
-		SoccerTeam st = new SoccerTeam();
-	    PrintWriter pw = new PrintWriter(new FileOutputStream("src/CoachSim/Output"));
-	        pw.println(st);
-	    pw.close();
-	}
+	
 	
 }
