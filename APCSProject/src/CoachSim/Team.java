@@ -49,10 +49,10 @@ public class Team {
 	@Override
 	public String toString() {
 		String output = "";
-		output += name + " ";		
+		output += name + "\n\nPlayer Info:\n";		
 		
 		for(int i = 0; i < players.size(); i++)
-			output += players.get(i) + " ";
+			output += players.get(i) + "\n\n";
 		
 		return output;
 	}

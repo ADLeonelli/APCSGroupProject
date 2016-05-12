@@ -14,19 +14,27 @@ public class BaseballPlayer extends Player implements Statable{
 	
 	public BaseballPlayer(String name){
 		super(name);
+		
+		stats = new ArrayList<BaseballStat>();
 	}
 	
 	public BaseballPlayer(int number){
 
 		super(number);
+		
+		stats = new ArrayList<BaseballStat>();
 	}
 	
 	public BaseballPlayer(String name, int number){
 		super(name, number);
+		
+		stats = new ArrayList<BaseballStat>();
 	}
 	
 	public BaseballPlayer(String name, int number, String pos){
 		super(name, number, pos);
+		
+		stats = new ArrayList<BaseballStat>();
 	}
 	
 	public int getHits(){
@@ -92,7 +100,7 @@ public class BaseballPlayer extends Player implements Statable{
 	
 	@Override
 	public String toString() {
-		return "Player Info::\nName::"+getName()+"\nNumber::"+getNumber()+"\nPosition::"+getPos() + "\nStats:: " + getStats();
+		return "Name: "+getName()+"\nNumber: "+getNumber()+"\nPosition: "+getPos() + "\nStats: " + getStats();
 	}
 
 
